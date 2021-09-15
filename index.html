@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media = "screen and (max-width: 450px)" href="phone.css">
+    <title>TIC-TAC-TOE</title>
+</head>
+<body>
+     <div class="container">
+        <!--Starting Page-->
+        <div id="startingpage">
+            <h2>TIC-TAC-TOE</h2>
+            <div id="line"></div>
+            <h4>Choose Your Opponent</h4>
+            <div id="buttons1">
+                <button type="button" id = "computer" class = "choose1" onclick="singlemode()">COMPUTER</button>
+                <button type="button" id = "human" class = "choose1" onclick = "doublemode()">HUMAN</button>
+            </div>
+            <div id="line"></div>
+            <h4>Select which you want to be</h4>
+            <div id="buttons2">
+                <button type="button" id = "playerx" class = "choose2">PLAYER (X)</button>
+                <button type="button" id = "playery" class = "choose2">PLAYER (O)</button>
+            </div>
+        </div>
+        <!--Main Page-->
+        <div id="mainpage">
+            <div id="headbtns">
+                <button type="button" id = "x_turn">X TURN</button>
+                <button type="button" id = "o_turn">O TURN</button>
+                <div id="showchange"></div>
+            </div>
+            <div id="board">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+        </div>
+        <!--winner Page-->
+        <div id="winnerpage">
+            <h2 id = "winnername">PLAYER (X) wins the game!</h2>
+            <div id = "buttons3">
+                <button type="button" id = "reset" class = "choose3">PLAY AGAIN</button>
+            </div>
+        </div>
+     </div>
+     <script src="script.js"></script>
+</body>
+</html>

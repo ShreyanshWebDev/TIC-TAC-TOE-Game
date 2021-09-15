@@ -1,0 +1,174 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: blueviolet;
+    display: grid;
+    height: 100vh;
+    place-items: center;
+}
+.container{
+    height: auto;
+    width: auto;
+    background-color: blue;
+    border-radius: 20px;
+    padding: 20px;
+}
+#startingpage{
+    height: 300px;
+    width: 400px;
+}
+#startingpage h2, #winnerpage h2{
+    font-size: 50px;
+    color:darkgrey;
+    text-align: center;
+}
+#startingpage #line{
+    height: 2px;
+    width: 100%;
+    background: darkolivegreen;
+    margin: 20px 0px;
+}
+#startingpage h4{
+    font-size: 30px;
+    color: darkseagreen;
+    text-align: center;
+    margin: 9px 0px;
+}
+#startingpage #buttons1, #startingpage #buttons2{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+#winnerpage #buttons3{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.choose1{
+    height: 40px;
+    width: 100%;
+    border-radius: 15px;
+    cursor: pointer;
+    border:none;
+    outline: none;
+    background-color: lightskyblue;
+    color: wheat;
+    font-size: 16px;
+    font-weight: bold;
+    transform: scale(1);
+    transition: 0.5s;
+}
+.choose2{
+    height: 40px;
+    width: 100%;
+    border-radius: 15px;
+    cursor: pointer;
+    border:none;
+    outline: none;
+    background-color: lightskyblue;
+    color: wheat;
+    font-size: 16px;
+    font-weight: bold;
+    transform: scale(1);
+    transition: 0.5s;
+}
+.choose3{
+    height: 40px ;
+    width: 150px;
+    border-radius: 15px;
+    cursor: pointer;
+    border:none;
+    outline: none;
+    background-color: lightskyblue;
+    color: wheat;
+    font-size: 16px;
+    font-weight: bold;
+    transform: scale(1);
+    transition: 0.5s;
+}
+#computer{
+    margin-right: 40px;
+}
+#playerx{
+    margin-right: 40px;
+}
+#startingpage #buttons1 button:hover, #startingpage #buttons2 button:hover, #winnerpage #buttons3 button:hover{
+    color: red;
+    background-color: rgba(0, 0, 0,0.7);
+    transform: scale(0.9);
+}
+#winnerpage{
+    height: 120px;
+    width: 650px;
+    display: none;
+}
+#mainpage{
+    height: 500px;
+    width: 400px;
+    padding: 20px;
+    position: relative;
+    display: none;
+}
+#mainpage #headbtns{
+    height: 55px;
+    width: 360px;
+    border-radius: 50px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 2px 2px 2px , -2px -2px 5px;
+}
+#mainpage #headbtns button{
+    height: 55px;
+    width: 180px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: whitesmoke;
+    font-size: 25px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+}
+#mainpage #headbtns #o_turn{
+    left: 180px;
+    z-index: 3;
+}
+#showchange{
+    height: 55px;
+    width: 180px;
+    border-radius: 50px;
+    background-color: lightskyblue;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    transition: 0.2s;
+}
+#board{
+    height: 400px;
+    width: 360px;
+    position: absolute;
+    top: 100px;
+    left: 41px;
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-gap: 10px;
+}
+.box{
+    height: 100px;
+    width: 100px;
+    box-shadow: 2px 2px 2px, -2px -2px 5px;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    font-size: 60px;
+    color: lightskyblue;
+}
